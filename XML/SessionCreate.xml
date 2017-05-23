@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Scheme can be found here: https://otrs.github.io/doc/manual/admin/3.3/en/html/genericinterface.html#generic-session-connector-->
+<soap:Envelope 	soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <SessionCreate xmlns="http://www.otrs.org/TicketConnector/">
+      <UserLogin></UserLogin>
+      <Password></Password>
+    </SessionCreate>
+  </soap:Body>
+</soap:Envelope>

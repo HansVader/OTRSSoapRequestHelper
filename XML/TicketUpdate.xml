@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Scheme can be found here: https://otrs.github.io/doc/manual/admin/3.3/en/html/genericinterface.html#generic-ticket-connector-->
+<soap:Envelope 	soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <TicketUpdate>
+      <SessionID>?</SessionID>
+      <TicketNumber>?</TicketNumber>
+      <Article>
+        <ArticleType>note-internal</ArticleType>
+        <SenderType>agent</SenderType>
+        <Subject>Notiz</Subject>
+        <Body>?</Body>
+        <ContentType>text/plain; charset=utf8</ContentType>
+        <TimeUnit>?</TimeUnit>
+      </Article>
+    </TicketUpdate>
+  </soap:Body>
+</soap:Envelope>
